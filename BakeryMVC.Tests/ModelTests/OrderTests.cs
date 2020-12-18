@@ -39,21 +39,16 @@ namespace BakeryMVC.Test
       Assert.AreEqual(orderDescription, result);
     }
     
-    // [TestMethod]
-    // public void SetDescription_SetDescription_String()
-    // {
-    //   //Arrange
-    //   string description = "Walk the dog.";
-    //   Item newItem = new Item(description);
-
-    //   //Act
-    //   string updatedDescription = "Do the dishes";
-    //   newItem.Description = updatedDescription;
-    //   string result = newItem.Description;
-
-    //   //Assert
-    //   Assert.AreEqual(updatedDescription, result);
-    // }
+    [TestMethod]
+    public void SetOrderDescription_SetOrderDescription_String()
+    {
+      string orderDescription = "Charity event.";
+      Order newOrder = new Order(orderDescription);
+      string updatedOrderDescription = "Weekly restaurant shipment";
+      newOrder.OrderDescription = updatedOrderDescription;
+      string result = newOrder.OrderDescription;
+      Assert.AreEqual(updatedOrderDescription, result);
+    }
 
     // [TestMethod]
     // public void GetAll_ReturnsEmptyList_ItemList()
