@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using BakeryMVC.Models; 
 using System;
 
@@ -50,18 +51,13 @@ namespace BakeryMVC.Test
       Assert.AreEqual(updatedOrderDescription, result);
     }
 
-    // [TestMethod]
-    // public void GetAll_ReturnsEmptyList_ItemList()
-    // {
-    //   // Arrange
-    //   List<Item> newList = new List<Item> { };
-
-    //   //Act
-    //   List<Item> result = Item.GetAll();
-
-    //   //Asset
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      List<Order> newOrder = new List<Order> { };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newOrder, result);
+    }
 
     // [TestMethod]
     // public void GetAll_ReturnsItems_ItemList()
