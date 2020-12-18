@@ -137,7 +137,7 @@ Class: Order (child)
   - ItemDescription (bread || pastry)
   - OrderType (wholesale || retail) // stretch
   - OrderPrice 
-    --> Nested classes: bread & pastry console app logic, create bread + pastry totals
+    --> Nested classes: bread & pastry console app logic (private!), create bread + pastry totals 
   - OrderDate (format? 1-12 mo, 1-31 day, 2020+ yr)
 
 ## Stretch Goals
