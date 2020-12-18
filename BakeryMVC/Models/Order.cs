@@ -5,6 +5,6 @@ namespace BakeryMVC.Models
 {
 	public class Order
 	{
-	//methods here
+	//the title, the description, the price, the date, and any other properties you would like to include
 	}
 }

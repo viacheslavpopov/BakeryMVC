@@ -5,6 +5,6 @@ namespace BakeryMVC.Models
 {
 	public class Vendor
 	{
-	//methods here
+	//vendor's name, a description of the vendor, a List of Orders belonging to the vendor, and any other properties you would like to include.
 	}
 }
