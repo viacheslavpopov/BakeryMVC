@@ -141,7 +141,11 @@ Class: Order (child)
   - OrderDate (format? 1-12 mo, 1-31 day, 2020+ yr)
 
 ## Stretch Goals
-TBD
+- Refactor conditional logic of pricing for an algebraic formula
+- New order displaying 
+- Delete individual vendors, all vendors, all X vendor's orders, individual orders
+- Paid or not
+- Add Javascript
 
 ## Known bugs
  
