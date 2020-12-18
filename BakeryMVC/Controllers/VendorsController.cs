@@ -7,39 +7,39 @@ namespace BakeryMVC.Controllers
 {
   public class VendorsController : Controller
   {
-      // [HttpGet("/categories")]
-      // public ActionResult Index()
-      // {
-      //   List<Category> allCategories = Category.GetAll();
-      //   return View(allCategories);
-      // } //displays list of all Categories
+      [HttpGet("/vendors")]
+      public ActionResult Index()
+      {
+        // List<Vendor> allVendors = Vendor.GetAll();
+        return View(); //(allVendors);
+      }
 
-      // [HttpGet("/categories/new")]
-      // public ActionResult New()
-      // {
-      //   return View();
-      // } //Offers form to create new Category
+      [HttpGet("/vendors/new")]
+      public ActionResult New()
+      {
+        return View();
+      }
 
-      // [HttpPost("/categories")]
-      // public ActionResult Create(string categoryName)
+      // [HttpPost("/vendors")]
+      // public ActionResult Create(string vendorName)
       // {
-      //   Category newCategory = new Category(categoryName);
-      //   return RedirectToAction("Index");
-      // } //Creates new Categories on server
+      //   // Vendor newVendor = new Vendor(vendorName);
+      //   // return RedirectToAction("Index");
+      // }
 
-      // [HttpGet("/categories/{id}")]
-      // public ActionResult Show(int id)
+      // [HttpGet("/vendors/{id}")]
+      // public ActionResult Show(int vendorId)
       // {
       //   Dictionary<string, object> model = new Dictionary<string, object>();
-      //   Category selectedCategory = Category.Find(id);
+      //   Category selectedCategory = Category.Find(vendorId);
       //   List<Item> categoryItems = selectedCategory.Items;
       //   model.Add("category", selectedCategory);
       //   model.Add("items", categoryItems);
       //   return View(model); //View() can only accept one argument
       // } //Displays one specific Category's details
 
-      // [HttpPost("/categories/{categoryId}/items")]
-      //   public ActionResult Create(int categoryId, string itemDescription)
+      // [HttpPost("/vendor/{vendorId}/orders")]
+      //   public ActionResult Create(int vendorId, string orderDescription)
       //   {
       //     Dictionary<string, object> model = new Dictionary<string, object>();
       //     Category foundCategory = Category.Find(categoryId);
