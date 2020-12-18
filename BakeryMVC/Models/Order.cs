@@ -24,6 +24,11 @@ namespace BakeryMVC.Models
       return _instances;
     }
 
+    // public static Order Find(int orderId)
+    // {
+    //   return _instances[orderId-1];
+    // } 
+
     public static void ClearAll()
     {
       _instances.Clear();

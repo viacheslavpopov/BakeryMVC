@@ -59,21 +59,21 @@ namespace BakeryMVC.Test
       CollectionAssert.AreEqual(newOrder, result);
     }
 
-    // [TestMethod]
-    // public void GetAll_ReturnsItems_ItemList()
-    // {
-    //   //Arrange
-    //   string description01 = "Walk the dog";
-    //   string description02 = "Wash the dishes";
-    //   Item newItem1 = new Item(description01);
-    //   Item newItem2 = new Item(description02);
-    //   List<Item> newList = new List<Item> { newItem1, newItem2 };
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrdersList()
+    {
+      //Arrange
+      string orderDescription01 = "Weekly restaurant shipment";
+      string orderDescription02 = "Charity event";
+      Order newOrder1 = new Order(orderDescription01);
+      Order newOrder2 = new Order(orderDescription02);
+      List<Order> newOrderList = new List<Order> { newOrder1, newOrder2 };
 
-    //   //Act
-    //   List<Item> result = Item.GetAll();
+      //Act
+      List<Order> result = Order.GetAll();
       
-    //   //Assert
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
+      //Assert
+      CollectionAssert.AreEqual(newOrderList, result);
+    }
   }
 }
