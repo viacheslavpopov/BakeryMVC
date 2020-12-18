@@ -4,14 +4,13 @@ using System;
 namespace BakeryMVC.Models
 {
 	public class Order
-	{
-	//the title, the description, the price, the date, and any other properties you would like to include
-  public string Description { get; set; }
-  public int Price { get; set; }
-  public int Date { get; set; } 
-  public int Id { get; }
-
+	{//the title --> Vendor X Order No., the description( the price, the date, )
   private static List<Order> _instances = new List<Order> {};
+  public string Description { get; set; } //what order is for (event,etc) 
+  public int Price { get; set; } // total price // stretch individual line items for nested class orders & prices
+  public int Date { get; set; } // month, day, year
+  public int Id { get; set; }
+  public string OrderType { get; set; } //wholesale or retail
 
   public Order(string description)
   {
