@@ -44,6 +44,12 @@ This project is a C# console application made for a bakery and includes the foll
 - CSHTML
 - Green & black teas
 
+## Color Theme
+Eggshell #F2EFE9
+Warm tan #BFAC95
+Soft brown #8C7974
+Deep slate #524D59
+Chestnut #403A3F
 
 ## Installation Requirements
 
