@@ -122,6 +122,24 @@ New.cshtml ('vendors/{parentId}/orders/new')
 Show.cshtml ('vendors/{parentId}/orders/{orderId}')
 
 
+Class: Vendor (parent)
+* Dictionary { Vendor, Order}
+* Constructor
+  - VendorName
+  - VendorId (auto-generated)
+  - InvoicesOfOrders
+  - BalanceDue // stretch
+
+Class: Order (child)
+* Constructor 
+  {- VendorId, VendorName}
+  - OrderId (auto-generated)
+  - ItemDescription (bread || pastry)
+  - OrderType (wholesale || retail) // stretch
+  - OrderPrice 
+    --> Nested classes: bread & pastry console app logic, create bread + pastry totals
+  - OrderDate (format? 1-12 mo, 1-31 day, 2020+ yr)
+
 ## Stretch Goals
 TBD
 
