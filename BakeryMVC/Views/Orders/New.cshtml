@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+@using BakeryMVC.Models;
+
+<h1>Add a new order to @Model.vendor</h1>
+
+<form action="vendors/@Model.Id/orders" method="post">
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.vendorID">
+  <input id="orderId" name="orderId" type="hidden" value="@Model.orderId">
+  <label for="orderDescription">Item to Order</label>
+  <input id="orderDescription" name="orderDescription" type="text">
+  <label for="orderQuantity">Quantity of Item</label>
+  <input id="orderQuantity" name="orderQuantity" type="text">
+  <label for="typeOrder">Wholesale or Retail</label>
+  <input id="typeOrder" name="typeOrder" type="text">
+  <label for="orderPrice">Price of Item</label>
+  <input id="orderPrice" name="orderPrice" type="text">
+  <label for="dateOfOrder">Date of Order</label>
+  <input id="dateOfOrder" name="dateOfOrder" type="text">
+  <button type="submit">Add Order</button>
+</form>

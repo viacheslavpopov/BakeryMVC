@@ -3,11 +3,11 @@
 }
 @using BakeryMVC.Models;
 
-<h1>Add a new item to @Model.name</h1>
+@* <h1>Add a new item to @Model.name</h1> *@
 
-<form action="categories/@Model.Id/items" method="post">
-  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id">
-  <label for="itemDescription">Item Description</label>
-  <input id="itemDescription" name="itemDescription" type="text">
-  <button type="submit">Add Item</button>
+<form action="vendors/@Model.Id/orders" method="post">
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="orderDescription">Order Description</label>
+  <input id="orderDescription" name="orderDescription" type="text">
+  <button type="submit">Add Order</button>
 </form>
