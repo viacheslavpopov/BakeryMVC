@@ -16,7 +16,7 @@ namespace BakeryMVC.Models
   {
     Description = description;
     _instances.Add(this);
-    Id = 1; //_instances.Count;
+    Id = _instances.Count;
   }
 
 	}
