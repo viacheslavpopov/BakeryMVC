@@ -7,14 +7,14 @@ namespace BakeryMVC.Models
 	{//the title --> Vendor X Order No., the description( the price, the date, )
   private static List<Order> _instances = new List<Order> {};
   public int Id { get; } // do not add set;
-  public string Description { get; set; } //what order is for (event,etc) 
+  public string OrderDescription { get; set; } //what order is for (event,etc) 
   // public int Price { get; set; } // total price // stretch individual line items for nested class orders & prices
   // public int Date { get; set; } // month, day, year
   // public string OrderType { get; set; } //wholesale or retail
 
-  public Order(string description)
+  public Order(string orderDescription)
   {
-    Description = description;
+    OrderDescription = orderDescription;
     _instances.Add(this);
     Id = _instances.Count;
   }
@@ -23,6 +23,6 @@ namespace BakeryMVC.Models
     {
       _instances.Clear();
     }
-    
+
 	}
 }

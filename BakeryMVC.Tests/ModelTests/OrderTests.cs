@@ -23,44 +23,21 @@ namespace BakeryMVC.Test
     [TestMethod]
     public void GetId_OrderInstantiateWithAnIdAndGetterReturns_Int()
     {
-      //Arrange
       string description = "test order";
       Order newOrder = new Order(description);
-
-      //Act
       int result = newOrder.Id;
-
-      //Assert
       Assert.AreEqual(1, result);
     }
 
-    // [TestMethod]
-    // public void Find_ReturnsCorrectItem_Item()
-    // {
-    //   //Arrange
-    //   string description01 = "Walk the dog";
-    //   string description02 = "Wash the dishes";
-    //   Item newItem1 = new Item(description01);
-    //   Item newItem2 = new Item(description02);
-
-    //   //Act
-    //   Item result = Item.Find(2);
-
-    //   //Assert
-    //   Assert.AreEqual(newItem2, result);
-    // }
-
-    // [TestMethod]
-    // public void GetDescription_ReturnsDescription_String()
-    // {
-    //   //Arrange
-    //   string description = "Walk the dog.";//creates instance
-    //   Item newItem = new Item(description); // pass new instance through Item to add to list
-    //   //Act
-    //   string result = newItem.Description; //calls on new item added to list
-    //   //Assert
-    //   Assert.AreEqual(description, result); //tests that expected result matches description of new item
-    // }
+    [TestMethod]
+    public void GetOrderDescription_ReturnsOrderDescription_String()
+    {
+      //Arrange
+      string orderDescription = "Charity event.";
+      Order newOrder = new Order(orderDescription);
+      string result = newOrder.OrderDescription;
+      Assert.AreEqual(orderDescription, result);
+    }
     
     // [TestMethod]
     // public void SetDescription_SetDescription_String()
