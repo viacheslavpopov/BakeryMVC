@@ -20,19 +20,19 @@ namespace BakeryMVC.Test
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
-    // [TestMethod]
-    // public void GetId_ItemsInstantiateWithAnIdAndGetterReturns_Int()
-    // {
-    //   //Arrange
-    //   string description = "Walk the dog.";
-    //   Item newItem = new Item(description);
+    [TestMethod]
+    public void GetId_OrderInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      //Arrange
+      string description = "test order";
+      Order newOrder = new Order(description);
 
-    //   //Act
-    //   int result = newItem.Id;
+      //Act
+      int result = newOrder.Id;
 
-    //   //Assert
-    //   Assert.AreEqual(1, result);
-    // }
+      //Assert
+      Assert.AreEqual(1, result);
+    }
 
     // [TestMethod]
     // public void Find_ReturnsCorrectItem_Item()
