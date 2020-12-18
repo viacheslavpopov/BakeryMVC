@@ -102,11 +102,14 @@ Once the project has been cloned to your computer and you have all the necessary
 
 | Spec                                            | Input                        | Output                        |
 | :---------------------------------------------- | :--------------------------- | :----------------------------|
-| **Welcome Page** | User begins program: `dotnet run` | Return: "Welcome Message & Pricing" |
+| **Welcome Page** | User accesses localhost:5000 | Output: "Welcome Message & Action List" |
+| **Create New Vendor** | 'Create new vendor' chosen | Output: "New vendor added" |
+| **View All Vendors** | 'View all vendors' chosen | Return: "All vendors" |
+| **Create New Order** | 'Create new order' chosen | Output: "New vendor added" |
+| **View All Order** | 'View all orders' chosen | Return: "All orders" |
 
 
-
-// Pages: 
+### Pages & Roots: 
 Welcome ('/')
 --> root path: 
 //Vendor Pages: 
