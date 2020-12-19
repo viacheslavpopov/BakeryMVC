@@ -13,7 +13,7 @@ namespace BakeryMVC.Models
       // VendorType = vendorType;
       _vendorInstances.Add(this);
       // _instances.Add(this); //for orders ...
-      // Id = _instances.Count;
+      Id = _vendorInstances.Count;
       Vendors = new List<Vendor>{};
       //, int vendorInvoice
     }
