@@ -13,8 +13,7 @@ namespace BakeryMVC.Models
       _vendorInstances.Add(this);
       Id = _vendorInstances.Count;
       Vendors = new List<Vendor>{};
-      //Orders = newList<Order>{};
-      //_instances.Add(this); //for orders ...
+      Orders = new List<Order>{};
     }
 
     public static List<Vendor> GetAll()
@@ -27,15 +26,21 @@ namespace BakeryMVC.Models
       _vendorInstances.Clear();
     }
 
-  public static Vendor Find(int vendorId)
-  {
-    return _vendorInstances[vendorId - 1];
-  }
+    public void Add(Order order)
+    {
+      Orders.Add(order);
+    }
+
+    public static Vendor Find(int vendorId)
+    {
+      return _vendorInstances[vendorId - 1];
+    }
+
     public string VendorName { get; set; }
     public int Id {get; }
-    // public List<Vendor> Vendors { get; set; }
     public List<Vendor> Vendors { get; set; 
     }
+    public List<Order> Orders {get; set; }
 	
   }
 }
