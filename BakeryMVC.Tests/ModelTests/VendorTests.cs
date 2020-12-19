@@ -60,21 +60,16 @@ namespace BakeryMVC.Tests
       CollectionAssert.AreEqual(newVendor, result);
     }
 
-//     [TestMethod]
-//     public void Find_ReturnsCorrectCategory_Category()
-//     {
-//     //Arrange
-//     string name01 = "Work";
-//     string name02 = "School";
-//     Category newCategory1 = new Category(name01);
-//     Category newCategory2 = new Category(name02);
-
-//     //Act
-//     Category result = Category.Find(2);
-
-//     //Assert
-//     Assert.AreEqual(newCategory2, result);
-//     }
+    [TestMethod]
+    public void Find_ReturnsVendor_Vendor()
+    {
+    string name01 = "Suzie's Cafe";
+    string name02 = "PAM Gala";
+    Vendor newVendor1 = new Vendor(name01);
+    Vendor newVendor2 = new Vendor(name02);
+    Vendor result = Vendor.Find(2);
+    Assert.AreEqual(newVendor2, result);
+    }
 
 //     [TestMethod]
 //     public void AddItem_AssociatesItemWithCategoryItemList()
