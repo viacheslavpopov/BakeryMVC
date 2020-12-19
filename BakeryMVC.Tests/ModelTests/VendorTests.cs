@@ -21,7 +21,7 @@ namespace BakeryMVC.Tests
     }
 
     [TestMethod]
-    public void GetName_ReturnsVenderName_String()
+    public void GetName_ReturnsVendorName_String()
     {
       //Arrange
       string name = "Test Vendor";
@@ -48,22 +48,17 @@ namespace BakeryMVC.Tests
 //       Assert.AreEqual(1, result);
 //     }
 
-//     [TestMethod]
-//     public void GetAll_ReturnsAllCategoryObjects_CategoryList()
-//     {
-//       //Arrange
-//       string name01 = "Work";
-//       string name02 = "School";
-//       Category newCategory1 = new Category(name01);
-//       Category newCategory2 = new Category(name02);
-//       List<Category> newList = new List<Category> { newCategory1, newCategory2 };
-
-//       //Act
-//       List<Category> result = Category.GetAll();
-
-//       //Assert
-//       CollectionAssert.AreEqual(newList, result);
-//     }
+    [TestMethod]
+    public void GetAll_ReturnsAllVendorObjects_VendorList()
+    {
+      string name01 = "Suzie's Cafe";
+      string name02 = "PAM Gala";
+      Vendor newVendor1 = new Vendor(name01);
+      Vendor newVendor2 = new Vendor(name02);
+      List<Vendor> newVendor = new List<Vendor> { newVendor1, newVendor2 };
+      List<Vendor> result = Vendor.GetAll();
+      CollectionAssert.AreEqual(newVendor, result);
+    }
 
 //     [TestMethod]
 //     public void Find_ReturnsCorrectCategory_Category()
