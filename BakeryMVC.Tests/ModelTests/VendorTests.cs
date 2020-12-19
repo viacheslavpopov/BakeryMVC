@@ -34,19 +34,19 @@ namespace BakeryMVC.Tests
       Assert.AreEqual(name, result);
     }
 
-//     [TestMethod]
-//     public void GetId_ReturnsCategoryId_Int()
-//     {
-//       //Arrange
-//       string name = "Test Category";
-//       Category newCategory = new Category(name);
+    [TestMethod]
+    public void GetId_ReturnsVendorId_Int()
+    {
+      //Arrange
+      string name = "Test Vendor";
+      Vendor newVendor = new Vendor(name);
 
-//       //Act
-//       int result = newCategory.Id;
+      //Act
+      int result = newVendor.Id;
 
-//       //Assert
-//       Assert.AreEqual(1, result);
-//     }
+      //Assert
+      Assert.AreEqual(1, result);
+    }
 
     [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
