@@ -6,12 +6,12 @@ using System;
 namespace BakeryMVC.Tests
 {
   [TestClass]
-  public class VendorTest //: IDisposable
+  public class VendorTest : IDisposable
   {
-    // public void Dispose()
-    // {
-    //   Vendor.ClearAll();
-    // }
+    public void Dispose()
+    {
+      Vendor.ClearAll();
+    }
 
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()

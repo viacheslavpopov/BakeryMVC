@@ -23,6 +23,11 @@ namespace BakeryMVC.Models
       return _vendorInstances;
     }
 
+    public static void ClearAll()
+    {
+      _vendorInstances.Clear();
+    }
+
     public string VendorName { get; set; }
     public int Id {get; }
     // public List<Vendor> Vendors { get; set; }
