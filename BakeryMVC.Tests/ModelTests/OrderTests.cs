@@ -75,5 +75,19 @@ namespace BakeryMVC.Test
       //Assert
       CollectionAssert.AreEqual(newOrderList, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      string orderDescription01 = "Weekly restaurant shipment";
+      string orderDescription02 = "Charity event";
+      Order newOrder1 = new Order(orderDescription01);
+      Order newOrder2 = new Order(orderDescription02);
+
+      Order result = Order.Find(2);
+
+      //Assert
+      Assert.AreEqual(newOrder2, result);
+    }
   }
 }
