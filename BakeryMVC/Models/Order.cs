@@ -6,18 +6,21 @@ namespace BakeryMVC.Models
 	public class Order
 	{//the title --> Vendor X Order No., the description( the price, the date, )
   private static List<Order> _instances = new List<Order> {};
-  public int Id { get; } // do not add set;
-  public string OrderDescription { get; set; } //what order is for (event,etc) 
-  // public int Price { get; set; } // total price // stretch individual line items for nested class orders & prices
-  // public int Date { get; set; } // month, day, year
-  // public string OrderType { get; set; } //wholesale or retail
 
   public Order(string orderDescription)
   {
     OrderDescription = orderDescription;
     _instances.Add(this);
     Id = _instances.Count;
+    // Date = Day + Month + ", " + Year;
   }
+
+  // public Date(int day, int month, int year)
+  //   {
+  //     Day = day;
+  //     Month = month;
+  //     Year = year;
+  //   }
 
     public static List<Order> GetAll()
     {
@@ -33,6 +36,13 @@ namespace BakeryMVC.Models
     {
       _instances.Clear();
     }
+    public int Id { get; } // do not add set;
+    public string OrderDescription { get; set; } //what order is for (event,etc) 
+    // public int Price { get; set; } // total price // stretch individual line items for nested class orders & prices
+    public int Day { get; set; }
+    public int Month { get; set; }
+    public int Year { get; set; }
+    // public string OrderType { get; set; } //wholesale or retail
 
 	}
 }
