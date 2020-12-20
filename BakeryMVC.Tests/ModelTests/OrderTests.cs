@@ -17,38 +17,44 @@ namespace BakeryMVC.Test
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("test");
+      Order newOrder = new Order("test", "test");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
     [TestMethod]
     public void GetId_OrderInstantiateWithAnIdAndGetterReturns_Int()
     {
+      string title = "test title";
       string description = "test order";
-      Order newOrder = new Order(description);
+      Order newOrder = new Order(title, description);
       int result = newOrder.Id;
       Assert.AreEqual(1, result);
     }
 
     [TestMethod]
-    public void GetOrderDescription_ReturnsOrderDescription_String()
+    public void GetOrderArguments_ReturnsOrderDescriptionAndTitle_String()
     {
-      //Arrange
+      string orderTitle = "Test Title";
       string orderDescription = "Charity event.";
-      Order newOrder = new Order(orderDescription);
+      Order newOrder = new Order(orderTitle, orderDescription);
       string result = newOrder.OrderDescription;
       Assert.AreEqual(orderDescription, result);
     }
     
     [TestMethod]
-    public void SetOrderDescription_SetOrderDescription_String()
+    public void SetOrderArguments_SetOrderDescriptionAndTitle_String()
     {
+      string orderTitle = "Test Org Holiday Fundraiser";
       string orderDescription = "Charity event.";
-      Order newOrder = new Order(orderDescription);
+      Order newOrder = new Order(orderTitle, orderDescription);
+      string updatedOrderTitle = "Test Org Recurring";
       string updatedOrderDescription = "Weekly restaurant shipment";
+      newOrder.OrderTitle = updatedOrderTitle;
       newOrder.OrderDescription = updatedOrderDescription;
-      string result = newOrder.OrderDescription;
-      Assert.AreEqual(updatedOrderDescription, result);
+      string descriptionResult = newOrder.OrderDescription;
+      string titleResult = newOrder.OrderTitle;
+      Assert.AreEqual(updatedOrderTitle, titleResult);
+      Assert.AreEqual(updatedOrderDescription, descriptionResult);
     }
 
     [TestMethod]
@@ -62,31 +68,27 @@ namespace BakeryMVC.Test
     [TestMethod]
     public void GetAll_ReturnsOrders_OrdersList()
     {
-      //Arrange
+      string orderTitle01 = "Suzie's Cafe";
+      string orderTitle02 = "PAM Gala";
       string orderDescription01 = "Weekly restaurant shipment";
       string orderDescription02 = "Charity event";
-      Order newOrder1 = new Order(orderDescription01);
-      Order newOrder2 = new Order(orderDescription02);
+      Order newOrder1 = new Order(orderTitle01, orderDescription01);
+      Order newOrder2 = new Order(orderTitle02, orderDescription02);
       List<Order> newOrderList = new List<Order> { newOrder1, newOrder2 };
-
-      //Act
       List<Order> result = Order.GetAll();
-      
-      //Assert
       CollectionAssert.AreEqual(newOrderList, result);
     }
 
     [TestMethod]
     public void Find_ReturnsCorrectOrder_Order()
     {
+      string orderTitle01 = "Suzie's Cafe";
+      string orderTitle02 = "PAM Gala";
       string orderDescription01 = "Weekly restaurant shipment";
       string orderDescription02 = "Charity event";
-      Order newOrder1 = new Order(orderDescription01);
-      Order newOrder2 = new Order(orderDescription02);
-
+      Order newOrder1 = new Order(orderTitle01, orderDescription01);
+      Order newOrder2 = new Order(orderTitle02, orderDescription02);
       Order result = Order.Find(2);
-
-      //Assert
       Assert.AreEqual(newOrder2, result);
     }
   }
