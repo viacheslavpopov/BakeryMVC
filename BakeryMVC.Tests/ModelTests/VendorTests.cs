@@ -72,7 +72,9 @@ namespace BakeryMVC.Tests
     {
       string title = "Test Title";
       string description = "Test order.";
-      Order newOrder = new Order(title, description);
+      int quantityBread = 1;
+      int quantityPastry = 1;
+      Order newOrder = new Order(title, description, quantityBread, quantityPastry);
       List<Order> newList = new List<Order> { newOrder };
       string descriptionV = "Recurring twice weekly bread order";
       string name = "Suzie's Cafe";

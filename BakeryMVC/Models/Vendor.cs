@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System;
 
 namespace BakeryMVC.Models
 {
@@ -7,9 +6,10 @@ namespace BakeryMVC.Models
 	{//vendor's name, a description of the vendor, a List of Orders belonging to the vendor, and any other properties you would like to include.
     private static List<Vendor> _vendorInstances = new List<Vendor> {};
 
-    public Vendor(string vendorName)
+    public Vendor(string vendorName, string vendorDescription)
     {
       VendorName = vendorName;
+      VendorDescription = vendorDescription;
       _vendorInstances.Add(this);
       Id = _vendorInstances.Count;
       Vendors = new List<Vendor>{};
@@ -37,6 +37,7 @@ namespace BakeryMVC.Models
     }
 
     public string VendorName { get; set; }
+    public string VendorDescription { get; set; }
     public int Id {get; }
     public List<Vendor> Vendors { get; set; 
     }

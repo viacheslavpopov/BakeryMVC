@@ -106,7 +106,7 @@ Once the project has been cloned to your computer and you have all the necessary
 | **Create New Vendor** | 'Create new vendor' chosen | Output: "New vendor added" |
 | **View All Vendors** | 'View all vendors' chosen | Return: "All vendors" |
 | **Create New Order** | 'Create new order' chosen | Output: "New vendor added" |
-| **View All Order** | 'View all orders' chosen | Return: "All orders" |
+| **View All Orders** | 'View all orders' chosen | Return: "All orders" |
 
 
 ### Pages & Roots: 
@@ -146,6 +146,7 @@ Class: Order (child)
 - Delete individual vendors, all vendors, all X vendor's orders, individual orders
 - Paid or not
 - Add Javascript
+-  Individual line items for nested class orders & prices
 
 ## Known bugs
  
