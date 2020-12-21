@@ -147,6 +147,7 @@ Class: Order (child)
 - Paid or not
 - Add Javascript
 -  Individual line items for nested class orders & prices
+- Retail vs wholesale price options
 
 ## Known bugs
  

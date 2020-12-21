@@ -4,12 +4,14 @@
 
 <h1>Order Details: </h1>
 
-<h3>Vendor: @Model["vendor"].Name</h3>
+<h3>Vendor: @Model["vendor"].OrderTitle</h3>
 <h3>Order: @Model["order"].OrderDescription</h3>
-<h3>Date Ordered: </h3>
-<h3>Order Type: </h3>
-<h3>Quantity</h3>
-<h3>Price: </h3>
+<h3>Date Ordered: @Model.Day @Model.Month, @Model.Year</h3>
+<h3>Bread Quantity: @Model.QuantityBread</h3>
+<h3>Total Bread Cost: $ @Model.TotalPastryCost</h3>
+<h3>Pastry Quantity: @Model.QuantityPastry</h3>
+<h3>Total Pastry Cost: $ @Model.TotalPastryCost </h3>
+<h3>Invoice Total: $ @Model.InvoiceTotal </h3>
 
 <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
 <a href='/vendors/orders'>View all orders</a>

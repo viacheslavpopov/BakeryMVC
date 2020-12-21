@@ -105,54 +105,5 @@ namespace BakeryMVC.Test
       Order result = Order.Find(2);
       Assert.AreEqual(newOrder2, result);
     }
-
-    //BreadCost tests
-    // [TestMethod]
-    // public void TotBreadLoavesCost_NumGreaterThanThreeNotDivisibleByThreeCost_30()
-    // {
-    //   int numOfLoaves = 8;
-    //   Bread testBread = new Bread(numOfLoaves);
-    //   Assert.AreEqual(30, testBread.TotBreadLoavesCost(8));
-    // }
-
-    // [TestMethod]
-    // public void TotBreadLoavesCost_NumGreaterThanThreeDivisibleByThreeCost_20()
-    // {
-    //   int numOfLoaves = 6;
-    //   Bread testBread = new Bread(numOfLoaves);
-    //   Assert.AreEqual(20, testBread.TotBreadLoavesCost(6));
-    // }
-
-    // [TestMethod]
-    // public void TotBreadLoavesCost_ThreeLoavesCost_10()
-    // {
-    //   int numOfLoaves = 3;
-    //   Bread testBread = new Bread(numOfLoaves);
-    //   Assert.AreEqual(10, testBread.TotBreadLoavesCost(3));
-    // }
-
-    // [TestMethod]
-    // public void TotBreadLoavesCost_TwoLoavesCost_10()
-    // {
-    //   int numOfLoaves = 2;
-    //   Bread testBread = new Bread(numOfLoaves);
-    //   Assert.AreEqual(10, testBread.TotBreadLoavesCost(2));
-    // }
-
-    // [TestMethod]
-    // public void TotBreadLoavesCost_OneLoafCost_Five()
-    // {
-    //   int numOfLoaves = 1;
-    //   Bread testBread = new Bread(numOfLoaves);
-    //   Assert.AreEqual(5, testBread.TotBreadLoavesCost(1));
-    // }
-
-    // [TestMethod]
-    // public void TotBreadLoavesCost_ZeroLoavesCost_Zero()
-    // {
-    //   int numOfLoaves = 0;
-    //   Bread testBread = new Bread(numOfLoaves);
-    //   Assert.AreEqual(0, testBread.TotBreadLoavesCost(0));
-    // }
   }
 }

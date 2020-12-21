@@ -8,14 +8,16 @@
 <form action="vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.vendorID">
   <input id="orderId" name="orderId" type="hidden" value="@Model.orderId">
-  <label for="orderDescription">Item to Order</label>
+    <label for="orderTitle">Order Title</label>
+  <input id="orderTitle" name="orderTitle" type="text">
+  <label for="orderDescription">Item Description</label>
   <input id="orderDescription" name="orderDescription" type="text">
-  <label for="orderQuantity">Quantity of Item</label>
-  <input id="orderQuantity" name="orderQuantity" type="text">
+  <label for="orderBreadQuantity">Quantity of Bread</label>
+  <input id="orderBreadQuantity" name="orderBreadQuantity" type="text">
+  <label for="orderPastryQuantity">Quantity of Pastry</label>
+  <input id="orderPastryQuantity" name="orderPastryQuantity" type="text">
   <label for="typeOrder">Wholesale or Retail</label>
   <input id="typeOrder" name="typeOrder" type="text">
-  <label for="orderPrice">Price of Item</label>
-  <input id="orderPrice" name="orderPrice" type="number">
   <label for="dayOfOrder">Day of Order</label>
   <input id="dayOfOrder" name="dayOfOrder" type="number" min="1" max="31" placeholder="1">
   <label for="monthOfOrder">Month of Order</label>
