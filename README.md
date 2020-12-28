@@ -1,6 +1,6 @@
 # Pierre's Bakery
 
-#### Epicodus Coding School, Console Application Independent Project #9 with C# & ASP.NET Core MVC, 12.16.2020
+#### Epicodus Coding School, Independent Project with C# & ASP.NET Core MVC Application, 12.18.2020
 
 #### By Danielle Thompson
 
@@ -18,18 +18,6 @@ The homepage of the app at the root path (localhost:5000/) should be a splash pa
 The vendors page should contain a link to a page presenting Pierre with a form he can fill out to create a new Vendor. After the form is submitted, the new Vendor object should be saved into a static List and Pierre should be routed back to the homepage.
 Pierre should be able to click a Vendor's name and go to a new page that will display all of that Vendor's orders.
 Pierre should be provided with a link to a page presenting him with a form to create a new Order for a particular Vendor. Hint: The route for this page might look something like: "/vendors/1/orders/new".
-
-
-This project is a C# console application made for a bakery and includes the following functionality:
-
-- One class for Bread and one for Pastry.
-- When the user runs the application, they receive a prompt with a welcome message, along with the cost for both Bread and Pastries for individual items and for discounted bulk.
-  Pierre offers the following deals:
-    - Bread: Buy 2, get 1 free. A single loaf costs $5.
-    - Pastry: Buy 1 for \$2 or 3 for $5. 
-- A user can specify how many loaves of Bread or how many Pastries they'd like.
-- The total cost of the order is returned to the user. The discount price will automatically be applied to *every* 3rd loaf and *every* 3rd pastry when large orders are made.
-- All functionality for the models is tested.
 
 ## Technologies Used
 
