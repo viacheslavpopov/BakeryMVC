@@ -30,7 +30,7 @@ Pierre should be provided with a link to a page presenting him with a form to cr
 - RESTful Routing, CRUD, & HTTP
 - Bootstrap Library
 - CSHTML
-- Green & black teas
+- Much green tea
 
 ## Color Theme
 Eggshell #F2EFE9
