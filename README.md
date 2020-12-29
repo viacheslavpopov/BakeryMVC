@@ -19,6 +19,8 @@ The vendors page should contain a link to a page presenting Pierre with a form h
 Pierre should be able to click a Vendor's name and go to a new page that will display all of that Vendor's orders.
 Pierre should be provided with a link to a page presenting him with a form to create a new Order for a particular Vendor. Hint: The route for this page might look something like: "/vendors/1/orders/new".
 
+---
+
 ## Technologies Used
 
 - Git
@@ -38,6 +40,8 @@ Pierre should be provided with a link to a page presenting him with a form to cr
 - Soft brown #8C7974
 - Deep slate #524D59
 - Chestnut #403A3F
+
+---
 
 ## Installation Requirements
 
@@ -85,6 +89,7 @@ Once the project has been cloned to your computer and you have all the necessary
 * When in the PierresBakery.Tests subfolder, `dotnet test` will allow you to run the test-driven-development tests for the project's Models. 
 * In the main project folder, `dotnet run` will run the application in the console. 
 
+---
 
 ### Specs
 
@@ -127,6 +132,8 @@ Class: Order (child)
   - OrderPrice 
     --> Nested classes: bread & pastry console app logic (private!), create bread + pastry totals 
   - OrderDate (format? 1-12 mo, 1-31 day, 2020+ yr)
+
+---
 
 ## Stretch Goals
 - Refactor conditional logic of pricing for an algebraic formula
