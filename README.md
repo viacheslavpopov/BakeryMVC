@@ -32,7 +32,7 @@ Pierre should be provided with a link to a page presenting him with a form to cr
 - CSHTML
 - Much green tea
 
-### Color Theme
+## Color Theme
 - Eggshell #F2EFE9
 - Warm tan #BFAC95
 - Soft brown #8C7974
@@ -43,7 +43,7 @@ Pierre should be provided with a link to a page presenting him with a form to cr
 
 This project requires the technologies listed in the above 'Technologies Used' section. If you need to acquire any of the above technologies to access this project, please follow the instructions included below.
 
-If you already have the necessary technologies on your local system, the commands necessary for running this console application and its tests will be found at the bottom of the instructions list. 
+If you already have the necessary technologies on your local system, the commands necessary for running this console application and its tests will be found at the bottom of the [instructions list](https://github.com/dani-t-codes/BakeryMVC.Solution#opening-the-project-on-your-local-system). 
 
 #### Installing Git
 ###### For Mac Users
