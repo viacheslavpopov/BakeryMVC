@@ -49,5 +49,12 @@ namespace BakeryMVC.Controllers
       model.Add("vendors", foundVendor);
       return View("Show", model);
     }
+
+    [HttpPost("vendors/delete")]
+    public ActionResult DeleteAll()
+    {
+      Vendor.ClearAll();
+      return View("Index");
+    }
   }
 }

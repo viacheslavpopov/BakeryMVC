@@ -4,6 +4,8 @@
 
 #### By Danielle Thompson
 
+---
+
 ## Description
 
 Building upon the console application first built for Pierre's Bakery (see this project's first iteration, [Pierre's Bakery Console app](https://github.com/dani-t-codes/PierresBakery.Solution)), Pierre would like an MVC application to help him track the vendors that purchase baked goods from him and the orders belonging to those vendors.
@@ -101,6 +103,7 @@ Once the project has been cloned to your computer and you have all the necessary
 | **Create New Order** | 'Create new order' chosen | Output: "New vendor added" |
 | **View All Orders** | 'View all orders' chosen | Return: "All orders" |
 
+---
 
 ### Pages & Roots: 
 Welcome ('/')
@@ -148,4 +151,4 @@ Class: Order (child)
 Oh, just wait ...
 
 ### Legal, or License
-_MIT_ Copyright (c) 2020 *_Danielle Thompson_**
+_MIT_ Copyright (c) 2020 *_Danielle Thompson_*

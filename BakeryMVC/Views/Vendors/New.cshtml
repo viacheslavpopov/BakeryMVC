@@ -5,7 +5,7 @@
 
 @* <h1>Add a new vendor to @Model.name</h1> *@
 
-<form action="vendors/@Model.Id/orders" method="post">
+<form action="vendors/@Model.Id" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
   <label for="orderDescription">Order Description</label>
   <input id="orderDescription" name="orderDescription" type="text">
