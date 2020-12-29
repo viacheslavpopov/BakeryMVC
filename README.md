@@ -6,7 +6,7 @@
 
 ## Description
 
-Building upon the console application first built for Pierre's Bakery (see this project's first iteration, (Pierre's Bakery Console app)[https://github.com/dani-t-codes/PierresBakery.Solution]), Pierre would like an MVC application to help him track the vendors that purchase baked goods from him and the orders belonging to those vendors.
+Building upon the console application first built for Pierre's Bakery (see this project's first iteration, [Pierre's Bakery Console app](https://github.com/dani-t-codes/PierresBakery.Solution)), Pierre would like an MVC application to help him track the vendors that purchase baked goods from him and the orders belonging to those vendors.
 
 For example, Pierre might supply croissants to a vendor called "Suzie's Cafe" once a week. Pierre may want to create a new Vendor to represent the cafe and add new Orders to it to help keep track of his expanding business relationships.
 
