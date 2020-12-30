@@ -1,13 +1,18 @@
 @{
   Layout = "_Layout";
 }
-@using BakeryMVC.Models;
 
-@* <h1>Add a new vendor to @Model.name</h1> *@
+<div class="container">
+  <h1>Create a New Vendor.</h1>
 
-<form action="vendors/@Model.Id" method="post">
-  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="orderDescription">Order Description</label>
-  <input id="orderDescription" name="orderDescription" type="text">
-  <button type="submit">Add Order</button>
-</form>
+  <form action="/vendors" method="post">
+    <label for="vendorName">New Vendor Name:</label>
+    <input id="vendorName" name="vendorName" type="text">
+    <label for="vendorDescription">New Vendor Description:</label>
+    <input id="vendorDescription" name="vendorDescription" type="text">
+    <button type="submit">Add Vendor</button>
+  </form>
+
+  <h3><a href="/">Main Page</a></h3>
+  <h3><a href="/vendors">Back to vendors</a></h3>
+</div>

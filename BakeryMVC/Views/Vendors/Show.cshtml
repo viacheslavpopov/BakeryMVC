@@ -1,17 +1,29 @@
-@using BakeryMVC.Models;
 @{
   Layout = "_Layout";
 }
 
-<h3>Here are all your current vendors:</h3>
+@using BakeryMVC.Models;
 
-<ol>
-  @foreach (var order in @Model["orders"])
+<div class="container">
+  <h3>Vendor Details:</h3>
+  @* @vendor.VendorName
+  @Vendor.VendorDescription*@
+
+  <h3>Vendor Orders:</h3>
+  @* @if (@Model["orders"].Count == 0) 
   {
-    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+    <h3>No orders have been added for this vendor yet.</h3>
+  } *@
+  
+  @* <h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add New Order to Vendor</a></h3> *@
+  <ol>
+  @foreach (Order order in @Model["orders"])
+  {
+    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.OrderId'>@order.OrderTitle</a></li>
   }
-</ol>
+  </ol>
 
-<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new vendor</a></p>
-<p><a href='/vendors'>Return to vendor list</a></p>
-<p><a href='/'>Return to Main Page</a></p>
+  @* <p><a href='/vendors/@Model["vendor"].Id/orders/new'>New order</a></p> *@
+  <p><a href='/vendors'>Vendor list</a></p>
+  <p><a href='/'>Main Page</a></p>
+</div>
