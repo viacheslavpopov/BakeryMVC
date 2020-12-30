@@ -14,7 +14,7 @@ namespace BakeryMVC.Models
     QuantityBread = quantityBread;
     QuantityPastry = quantityPastry;
     _instances.Add(this);
-    Id = _instances.Count;
+    OrderId = _instances.Count;
     InvoiceTotal = TotalBreadCost + TotalPastryCost;
   }
 
@@ -33,7 +33,7 @@ namespace BakeryMVC.Models
     _instances.Clear();
   }
   
-  public int Id { get; }
+  public int OrderId { get; }
   public string OrderTitle { get; set; }
   public string OrderDescription { get; set; }
   public int DateTime { get; set; }
