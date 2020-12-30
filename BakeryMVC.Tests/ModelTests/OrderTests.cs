@@ -30,7 +30,7 @@ namespace BakeryMVC.Test
       int breadQuantity = 2;
       int pastryQuantity = 4;
       Order newOrder = new Order(title, orderDate, description, breadQuantity, pastryQuantity);
-      int result = newOrder.Id;
+      int result = newOrder.OrderId;
       Assert.AreEqual(1, result);
     }
 

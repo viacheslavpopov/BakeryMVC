@@ -80,7 +80,7 @@ namespace BakeryMVC.Tests
       string descriptionV = "Recurring twice weekly bread order";
       string name = "Suzie's Cafe";
       Vendor newVendor = new Vendor(name, descriptionV);
-      newVendor.Add(newOrder);
+      newVendor.AddOrder(newOrder);
       List<Order> result = newVendor.Orders;
       CollectionAssert.AreEqual(newList, result);
     }
