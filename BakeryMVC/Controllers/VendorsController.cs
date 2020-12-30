@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using BakeryMVC.Models;
+using System;
 
 namespace BakeryMVC.Controllers
 {
@@ -23,30 +24,30 @@ namespace BakeryMVC.Controllers
     public ActionResult Create(string vendorName, string vendorDescription)
     {
       Vendor newVendor = new Vendor(vendorName, vendorDescription);
-      return RedirectToAction("New");
+      return RedirectToAction("Index");
     }
 
     [HttpGet("/vendors/{id}")]
-    public ActionResult Show(int vendorId)
+    public ActionResult Show(int id)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
-      Vendor selectedVendor = Vendor.Find(vendorId);
+      Vendor selectedVendor = Vendor.Find(id);
       List<Order> vendorOrders = selectedVendor.Orders;
       model.Add("vendors", selectedVendor);
       model.Add("orders", vendorOrders);
       return View(model);
     }
 
-    [HttpPost("/vendor/{vendorId}/orders")]
+    [HttpPost("/vendors/{vendorId}/orders")] // creates new orders w/in x category
     public ActionResult Create(int vendorId, string orderTitle, int orderDate, string orderDescription, int quantityBread, int quantityPastry)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
       Order newOrder = new Order(orderTitle, orderDate, orderDescription, quantityBread, quantityPastry);
-      foundVendor.Add(newOrder);
+      foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
-      model.Add("vendors", foundVendor);
+      model.Add("vendor", foundVendor);
       return View("Show", model);
     }
 
@@ -54,7 +55,7 @@ namespace BakeryMVC.Controllers
     public ActionResult DeleteAll()
     {
       Vendor.ClearAll();
-      return View("Index");
+      return View();
     }
   }
 }
