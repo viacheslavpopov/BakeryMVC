@@ -1,6 +1,6 @@
-# Pierre's Bakery
-
 <div align="center">
+
+# Pierre's Bakery
 
 </div>
 <p align="center">Epicodus Coding School, Independent Project with C# & ASP.NET Core MVC Application, 12.18.2020</p>
@@ -16,8 +16,15 @@ Vendors include properties for the vendor's name, a description of the vendor, a
 
 The homepage of the app at the root path (localhost:5000/) welcomes Pierre and provides him with a link to a Vendors page. Razor is used to display information to the user on each HTML page in the application.
 
-From there, the vendors page contains a link to a page with a form that Pierre can fill out to create a new Vendor. After the form is submitted, the new Vendor object is saved into a static List and Pierre should be routed back to the homepage. Pierre can then click a Vendor's name and go to a new page that will display all of that Vendor's orders.
-From there, Pierre can follow a link to a page that will present a form to create a new Order for that Vendor.
+<img align="center" src="BakeryMVC/wwwroot/img/Splash-Page-Screenshot.png" alt="Welcome page screenshot">
+
+From there, the vendors page contains a link to a page with a form that Pierre can fill out to create a new Vendor. 
+
+<img align="center" src="BakeryMVC/wwwroot/img/New-Vendor-Form-Screenshot.png">
+
+After the form is submitted, the new Vendor object is saved into a static List and Pierre should be routed back to the homepage. Pierre can then click a Vendor's name and go to a new page that will display all of that Vendor's orders. From there, Pierre can follow a link to a page that will present a form to create a new Order for that Vendor.
+
+<img align="center" src="BakeryMVC/wwwroot/img/New-Order-Form-Screenshot.png">
 
 ---
 
@@ -50,12 +57,12 @@ This project requires the technologies listed in the above 'Technologies Used' s
 If you already have the necessary technologies on your local system, the commands necessary for running this console application and its tests will be found at the bottom of the [instructions list](https://github.com/dani-t-codes/BakeryMVC.Solution#opening-the-project-on-your-local-system). 
 
 #### Installing Git
-###### For Mac Users
+##### For Mac Users
 - Access Terminal in your Finder, and open a new window. Install the package manager, [Homebrew](https://brew.sh/), on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.
 - Ensure Homebrew packages are run with this line of code: `echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile`.
 - Once homebrew is installed, install Git, a version control system for code writers, with this line of code `brew install git`.
 
-###### For Windows Users
+##### For Windows Users
 - Open a new Command Prompt window by typing "Cmd" in your computer's search bar.
 - Determine whether you have 32-bit or 64-bit Windows by following these [instructions](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running).
 - Go to [Git Bash](https://gitforwindows.org/), click on the "Download" button, and download the corresponding exe file from the Git for Windows site._

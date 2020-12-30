@@ -3,26 +3,43 @@
 }
 
 <div class="jumbotron">
-  <h1>Add a new order to @Model.vendorName</h1>
+  <h1>Add a new order to</h1> 
+  <h1>Suzie's Cafe</h1>
+  @* @Model.vendorName *@
 </div>
 
-<form action="vendors/@Model.Id/orders" method="post">
-  <input id="vendorId" name="vendorId" type="hidden" value="@Model.vendorId">
-  <label for="orderTitle">Order Title</label>
-  <input id="orderTitle" name="orderTitle" type="text">
-  <label for="orderDescription">Item Description</label>
-  <input id="orderDescription" name="orderDescription" type="text">
-  <label for="orderBreadQuantity">Quantity of Bread</label>
-  <input id="orderBreadQuantity" name="orderBreadQuantity" type="text">
-  <label for="orderPastryQuantity">Quantity of Pastry</label>
-  <input id="orderPastryQuantity" name="orderPastryQuantity" type="text">
-  <label for="typeOrder">Wholesale or Retail</label>
-  <input id="typeOrder" name="typeOrder" type="text">
-  <label for="dayOfOrder">Day of Order</label>
-  <input id="dayOfOrder" name="dayOfOrder" type="number" min="1" max="31" placeholder="1">
-  <label for="monthOfOrder">Month of Order</label>
-  <input id="monthOfOrder" name="monthOfOrder" type="number" min="1" max="12" placeholder="1">
-  <label for="YearOfOrder">Year of Order</label>
-  <input id="YearOfOrder" name="YearOfOrder" type="number" min="2020" placeholder="2020">
-  <button type="submit">Add Order</button>
-</form>
+<div class="container">
+  @* <form action="vendors/@Model.Id/orders" method="post"> *@
+    @* <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id"> *@
+    <label for="orderTitle">Order Title</label>
+    <input id="orderTitle" name="orderTitle" type="text">
+    <br>
+    <label for="orderDescription">Item Description</label>
+    <input id="orderDescription" name="orderDescription" type="text">
+    <br>
+    <label for="orderBreadQuantity">Quantity of Bread</label>
+    <input id="orderBreadQuantity" name="orderBreadQuantity" type="text">
+    <br>
+    <label for="orderPastryQuantity">Quantity of Pastry</label>
+    <input id="orderPastryQuantity" name="orderPastryQuantity" type="text">
+    <br>
+    <label for="typeOrder">Wholesale or Retail</label>
+    <input id="typeOrder" name="typeOrder" type="text">
+    <br>
+    <label for="dayOfOrder">Day of Order</label>
+    <input id="dayOfOrder" name="dayOfOrder" type="number" min="1" max="31" placeholder="1">
+    <br>
+    <label for="monthOfOrder">Month of Order</label>
+    <input id="monthOfOrder" name="monthOfOrder" type="number" min="1" max="12" placeholder="1">
+    <br>
+    <label for="YearOfOrder">Year of Order</label>
+    <input id="YearOfOrder" name="YearOfOrder" type="number" min="2020" placeholder="2020">
+    <br>
+    <button type="submit">Add Order</button>
+  </form>
+
+  <hr>
+  <h3><a href="/vendors/orders">Orders</a></h3>
+  <h3><a href="/vendors">Vendors</a></h3>
+  <h3><a href="/">Main Page</a></h3>
+</div>
