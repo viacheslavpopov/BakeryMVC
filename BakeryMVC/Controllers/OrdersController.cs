@@ -14,7 +14,7 @@ namespace BakeryMVC.Controllers
       return View(allOrders);
     }
 
-    [HttpGet("/vendors/order/new")]
+    [HttpGet("/vendors/orders/new")]
     public ActionResult New()
     {
       return View();
