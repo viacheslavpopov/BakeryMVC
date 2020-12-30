@@ -6,16 +6,16 @@
 
 <div class="container">
   <h3>Vendor Details:</h3>
-  @* @vendor.VendorName
-  @Vendor.VendorDescription*@
+  @* @Model["vendor"].vendorName
+  @Model["vendor"].vendorDescription *@
 
   <h3>Vendor Orders:</h3>
-  @* @if (@Model["orders"].Count == 0) 
+  @if (@Model["orders"].Count == 0) 
   {
     <h3>No orders have been added for this vendor yet.</h3>
-  } *@
+  }
   
-  @* <h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add New Order to Vendor</a></h3> *@
+  <h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add New Order to Vendor</a></h3>
   <ol>
   @foreach (Order order in @Model["orders"])
   {
@@ -23,7 +23,7 @@
   }
   </ol>
 
-  @* <p><a href='/vendors/@Model["vendor"].Id/orders/new'>New order</a></p> *@
+  <hr>
   <p><a href='/vendors'>Vendor list</a></p>
   <p><a href='/'>Main Page</a></p>
 </div>
