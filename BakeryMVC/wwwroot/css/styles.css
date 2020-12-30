@@ -28,7 +28,11 @@ img {
   filter: drop-shadow(0px 10px 3px #403A3F);
 }
 
-div#footer {
+.center {
+  text-align: center;
+}
+
+#footer {
   background-color: #F2EFE9;
   text-align: center;
   letter-spacing: 5px;

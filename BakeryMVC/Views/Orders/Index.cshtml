@@ -4,7 +4,9 @@
 
 @using BakeryMVC.Models;
 
-<h1>Orders</h1>
+<div class="jumbotron">
+  <h1>Orders</h1>
+</div>
 
 @if (@Model.Count == 0)
 {
@@ -13,11 +15,11 @@
 
 @foreach (Order order in Model)
 {
-  <li>@order.OrderDescription</li>
+  <h3> - @order.OrderDescription</h3>
 }
 
 <h3><a href="/vendors">Add a new order to an existing vendor.</a></h3>
 <h3><a href="/vendors/new">Add a new order to a new vendor.</a></h3>
 <h6><a href="/orders/delete">Delete all orders.</a></h6>
 <hr>
-<h3><a href='/'>Back home</a></h3>
+<h3><a href='/'>Main Page</a></h3>
