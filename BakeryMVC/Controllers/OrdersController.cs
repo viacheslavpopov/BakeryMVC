@@ -7,18 +7,18 @@ namespace BakeryMVC.Controllers
   public class OrdersController : Controller
   {
 
-    // [HttpGet("/vendors/orders")]
-    // public ActionResult Index()
-    // {
-    //   List<Order> allOrders = Order.GetAll();
-    //   return View(allOrders);
-    // }
+    [HttpGet("/vendors/orders")]
+    public ActionResult Index()
+    {
+      List<Order> allOrders = Order.GetAll();
+      return View(allOrders);
+    }
 
-    // [HttpGet("/vendors/order/new")]
-    // public ActionResult New()
-    // {
-    //   return View();
-    // }
+    [HttpGet("/vendors/order/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
 
     [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
