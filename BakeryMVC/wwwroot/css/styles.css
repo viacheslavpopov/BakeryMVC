@@ -16,6 +16,7 @@ h1 {
 
 h3 {
   color: #403A3F;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 img {
@@ -27,8 +28,13 @@ img {
   filter: drop-shadow(0px 10px 3px #403A3F);
 }
 
-#footer {
+div#footer {
   background-color: #F2EFE9;
   text-align: center;
   letter-spacing: 5px;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  padding:8px;
 }
