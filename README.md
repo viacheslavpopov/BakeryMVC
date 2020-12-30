@@ -1,25 +1,23 @@
 # Pierre's Bakery
 
-#### Epicodus Coding School, Independent Project with C# & ASP.NET Core MVC Application, 12.18.2020
+<div align="center">
 
-#### By Danielle Thompson
+</div>
+<p align="center">Epicodus Coding School, Independent Project with C# & ASP.NET Core MVC Application, 12.18.2020</p>
+<p align="center">By Danielle Thompson</p>
 
 ---
 
 ## Description
 
-Building upon the console application first built for Pierre's Bakery (see this project's first iteration, [Pierre's Bakery Console app](https://github.com/dani-t-codes/PierresBakery.Solution)), Pierre would like an MVC application to help him track the vendors that purchase baked goods from him and the orders belonging to those vendors.
+Building upon a console application first built for Pierre's Bakery (see [Pierre's Bakery Console app](https://github.com/dani-t-codes/PierresBakery.Solution)), this MVC application tracks the vendors that purchase baked goods from Pierre and the orders belonging to those vendors. 
 
-For example, Pierre might supply croissants to a vendor called "Suzie's Cafe" once a week. Pierre may want to create a new Vendor to represent the cafe and add new Orders to it to help keep track of his expanding business relationships.
+Vendors include properties for the vendor's name, a description of the vendor, a list of Orders belonging to the vendor. An Order includes properties like the title, the description, the price, and the date.
 
-Razor is used to display information on each page.
+The homepage of the app at the root path (localhost:5000/) welcomes Pierre and provides him with a link to a Vendors page. Razor is used to display information to the user on each HTML page in the application.
 
-Create a Vendor class. This class should include properties for the vendor's name, a description of the vendor, a List of Orders belonging to the vendor, and any other properties you would like to include.
-Create an Order class. This class should include properties for the title, the description, the price, the date, and any other properties you would like to include.
-The homepage of the app at the root path (localhost:5000/) should be a splash page welcoming Pierre and providing him with a link to a Vendors page.
-The vendors page should contain a link to a page presenting Pierre with a form he can fill out to create a new Vendor. After the form is submitted, the new Vendor object should be saved into a static List and Pierre should be routed back to the homepage.
-Pierre should be able to click a Vendor's name and go to a new page that will display all of that Vendor's orders.
-Pierre should be provided with a link to a page presenting him with a form to create a new Order for a particular Vendor. Hint: The route for this page might look something like: "/vendors/1/orders/new".
+From there, the vendors page contains a link to a page with a form that Pierre can fill out to create a new Vendor. After the form is submitted, the new Vendor object is saved into a static List and Pierre should be routed back to the homepage. Pierre can then click a Vendor's name and go to a new page that will display all of that Vendor's orders.
+From there, Pierre can follow a link to a page that will present a form to create a new Order for that Vendor.
 
 ---
 
@@ -65,7 +63,6 @@ If you already have the necessary technologies on your local system, the command
 
 #### For Both Mac & Windows systems
 - Once you have Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/BakeryMVC.Solution), click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/BakeryMVC.Solution.git`.
-
 
 #### Installing C#, .NET, dotnet script, & MySQL
 * Install C# and .Net according to your operating system below. 
