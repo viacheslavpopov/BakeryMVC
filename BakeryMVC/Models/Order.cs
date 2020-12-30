@@ -4,7 +4,6 @@ namespace BakeryMVC.Models
 {
 	public class Order
 	{
-  private static List<Order> _instances = new List<Order> {};
 
   public Order(string orderTitle, int orderDate, string orderDescription, int quantityBread, int quantityPastry)
   {
@@ -33,6 +32,7 @@ namespace BakeryMVC.Models
     _instances.Clear();
   }
   
+  private static List<Order> _instances = new List<Order> {};
   public int OrderId { get; }
   public string OrderTitle { get; set; }
   public string OrderDescription { get; set; }
