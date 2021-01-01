@@ -1,29 +1,25 @@
 @{
-  Layout = "_Layout";
+    Layout = "_Layout";
 }
 
 @using BakeryMVC.Models;
 
 <div class="jumbotron">
-  <h1>Order Details: </h1>
+    <h1>Order Details: </h1>
 </div>
 <img src='~/img/croissants.jpg'>
 <hr>
-
 <ol>
-@foreach (Order order in @Model["orders"])
-{
-  <h3>Vendor: @Model["vendor"].OrderTitle</h3>
-  <h3>Order: @Model["order"].OrderDescription</h3>
-  <h3>Date Ordered: @Model["order"].Date</h3>
-  <h3>Bread Quantity: @Model["order"].QuantityBread</h3>
-  <h3>Total Bread Cost: $ @Model["order"].TotalPastryCost</h3>
-  <h3>Pastry Quantity: @Model["order"].QuantityPastry</h3>
-  <h3>Total Pastry Cost: $ @Model["order"].TotalPastryCost </h3>
-  <h3>Invoice Total: $ @Model["order"].InvoiceTotal </h3>
-}
+    <h3>Vendor: @Model["vendor"].VendorName</h3>
+    <h3>Order: @Model["order"].OrderDescription</h3>
+    <h3>Date Ordered: @Model["order"].Date</h3>
+    <h3>Bread Quantity: @Model["order"].QuantityBread</h3>
+    <h3>Total Bread Cost: $ @Model["order"].TotalPastryCost</h3>
+    <h3>Pastry Quantity: @Model["order"].QuantityPastry</h3>
+    <h3>Total Pastry Cost: $ @Model["order"].TotalPastryCost </h3>
+    <h3>Invoice Total: $ @Model["order"].InvoiceTotal </h3>
 </ol>
-
 <hr>
-<a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
-<a href='/vendors/orders'>View all orders</a>
+<h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a></h3>
+<h3><a href='/vendors/orders'>View all orders</a></h3>
+<h3><a href='/'>Main Page</a></h3>

@@ -1,25 +1,21 @@
 @{
-  Layout = "_Layout";
+    Layout = "_Layout";
 }
 
-
 <div class="container">
-  <div class="jumbotron">
-    <h1>Create a Vendor</h1>
-  </div>
-
-  <img src='~/img/loaves.jpg'>
-  <hr>
-
-  <form action="/vendors" method="post">
-    <label for="vendorName">New Vendor Name:</label>
-    <input id="vendorName" name="vendorName" type="text">
-    <label for="vendorDescription">New Vendor Description:</label>
-    <input id="vendorDescription" name="vendorDescription" type="text">
-    <button type="submit">Add Vendor</button>
-  </form>
-
-  <hr>
-  <h3><a href="/vendors">Vendors</a></h3>
-  <h3><a href="/">Main Page</a></h3>
+    <div class="jumbotron">
+        <h1>Create a Vendor</h1>
+    </div>
+    <img src='~/img/loaves.jpg'>
+    <hr>
+    <form action="/vendors" method="post">
+        <label for="vendorName">New Vendor Name:</label>
+        <input id="vendorName" name="vendorName" type="text">
+        <label for="vendorDescription">New Vendor Description:</label>
+        <input id="vendorDescription" name="vendorDescription" type="text">
+        <button type="submit">Add Vendor</button>
+    </form>
+    <hr>
+    <h3><a href="/vendors">Vendors</a></h3>
+    <h3><a href="/">Main Page</a></h3>
 </div>

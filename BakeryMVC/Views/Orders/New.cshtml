@@ -1,45 +1,37 @@
 @{
-  Layout = "_Layout";
+    Layout = "_Layout";
 }
 
 @using BakeryMVC.Models;
 
 <div class="jumbotron">
-  <h1>Add a new order to</h1> 
-  @* <h1>@Model.vendorName</h1> *@
+    <h1>Add a new order to</h1>
+    @* <h1>@Model.VendorName</h1> *@
 </div>
 <img src='~/img/croissants.jpg'>
 <hr>
-
 <div class="container">
-  <form action="vendors/@Model.Id/orders" method="post">
-    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-    <label for="orderTitle">Order Title</label>
-    <input id="orderTitle" name="orderTitle" type="text">
-    <br>
-    <label for="orderDescription">Item Description</label>
-    <input id="orderDescription" name="orderDescription" type="text">
-    <br>
-    <label for="orderBreadQuantity">Quantity of Bread</label>
-    <input id="orderBreadQuantity" name="orderBreadQuantity" type="number" placeholder="1">
-    <br>
-    <label for="orderPastryQuantity">Quantity of Pastry</label>
-    <input id="orderPastryQuantity" name="orderPastryQuantity" type="number" placeholder="1">
-    <br>
-    <label for="orderPastryQuantity">Quantity of Pastry</label>
-    <input id="orderPastryQuantity" name="orderPastryQuantity" type="number" placeholder="1">
-    <br>
-    <label for="typeOrder">Wholesale or Retail</label>
-    <input id="typeOrder" name="typeOrder" type="text">
-    <br>
-    <label for="orderDate">Day of Order</label>
-    <input id="orderDate" name="orderDate" type="date">
-    <br>
-    <button type="submit">Add Order</button>
-  </form>
-
-  <hr>
-  <h3><a href="/vendors/orders">Orders</a></h3>
-  <h3><a href="/vendors">Vendors</a></h3>
-  <h3><a href="/">Main Page</a></h3>
+    <form action="/vendors/@Model.Id/orders" method="post">
+        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+        <label for="orderTitle">Order Title</label>
+        <input id="orderTitle" name="orderTitle" type="text">
+        <br>
+        <label for="orderDescription">Item Description</label>
+        <input id="orderDescription" name="orderDescription" type="text">
+        <br>
+        <label for="orderBreadQuantity">Quantity of Bread</label>
+        <input id="orderBreadQuantity" name="orderBreadQuantity" type="number" placeholder="1">
+        <br>
+        <label for="orderPastryQuantity">Quantity of Pastry</label>
+        <input id="orderPastryQuantity" name="orderPastryQuantity" type="number" placeholder="1">
+        <br>
+        <label for="orderDate">Day of Order</label>
+        <input id="orderDate" name="orderDate" type="date">
+        <br>
+        <button type="submit">Add Order</button>
+    </form>
+    <hr>
+    <h3><a href="/vendors/orders">Orders</a></h3>
+    <h3><a href="/vendors">Vendors</a></h3>
+    <h3><a href="/">Main Page</a></h3>
 </div>

@@ -38,7 +38,7 @@ namespace BakeryMVC.Controllers
       return View(model);
     }
 
-    [HttpPost("/vendors/{vendorId}/orders")] // creates new orders w/in x category
+    [HttpPost("/vendors/{vendorId}/orders")] // creates new orders w/in x vendor
     public ActionResult Create(int vendorId, string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry, int invoiceTotal)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();

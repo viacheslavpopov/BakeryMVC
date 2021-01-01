@@ -1,22 +1,22 @@
 * {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 body {
-  background-color: #BFAC95;
-  color: #403A3F;
+  background-color: #bfac95;
+  color: #403a3f;
 }
 
 h1 {
-  color: #524D59;
+  color: #524d59;
   text-align: center;
   letter-spacing: 10px;
   font-style: italic;
 }
 
 h3 {
-  color: #403A3F;
-  font-family: 'Times New Roman', Times, serif;
+  color: #403a3f;
+  font-family: "Times New Roman", Times, serif;
 }
 
 img {
@@ -25,7 +25,7 @@ img {
   margin-right: auto;
   width: 400px;
   height: auto;
-  filter: drop-shadow(0px 10px 3px #403A3F);
+  filter: drop-shadow(0px 10px 3px #403a3f);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -35,12 +35,13 @@ img {
 }
 
 #footer {
-  background-color: #F2EFE9;
+  background-color: #f2efe9;
   text-align: center;
   letter-spacing: 5px;
-  position:fixed;
-  bottom:0px;
-  left:0px;
-  width:100%;
-  padding:8px;
 }
+
+/* position: fixed;
+bottom: 0px;
+left: 0px;
+width: 100%;
+padding: 8px; */
