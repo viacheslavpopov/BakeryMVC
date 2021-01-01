@@ -13,7 +13,7 @@
 
 <div class="container">
   <form action="vendors/@Model.Id/orders" method="post">
-    <input id="orderId" name="orderId" type="hidden" value="@Model.Id">
+    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
     <label for="orderTitle">Order Title</label>
     <input id="orderTitle" name="orderTitle" type="text">
     <br>
@@ -21,22 +21,19 @@
     <input id="orderDescription" name="orderDescription" type="text">
     <br>
     <label for="orderBreadQuantity">Quantity of Bread</label>
-    <input id="orderBreadQuantity" name="orderBreadQuantity" type="text">
+    <input id="orderBreadQuantity" name="orderBreadQuantity" type="number" placeholder="1">
     <br>
     <label for="orderPastryQuantity">Quantity of Pastry</label>
-    <input id="orderPastryQuantity" name="orderPastryQuantity" type="text">
+    <input id="orderPastryQuantity" name="orderPastryQuantity" type="number" placeholder="1">
+    <br>
+    <label for="orderPastryQuantity">Quantity of Pastry</label>
+    <input id="orderPastryQuantity" name="orderPastryQuantity" type="number" placeholder="1">
     <br>
     <label for="typeOrder">Wholesale or Retail</label>
     <input id="typeOrder" name="typeOrder" type="text">
     <br>
-    <label for="dayOfOrder">Day of Order</label>
-    <input id="dayOfOrder" name="dayOfOrder" type="number" min="1" max="31" placeholder="1">
-    <br>
-    <label for="monthOfOrder">Month of Order</label>
-    <input id="monthOfOrder" name="monthOfOrder" type="number" min="1" max="12" placeholder="1">
-    <br>
-    <label for="YearOfOrder">Year of Order</label>
-    <input id="YearOfOrder" name="YearOfOrder" type="number" min="2020" placeholder="2020">
+    <label for="orderDate">Day of Order</label>
+    <input id="orderDate" name="orderDate" type="date">
     <br>
     <button type="submit">Add Order</button>
   </form>

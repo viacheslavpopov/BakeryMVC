@@ -6,13 +6,14 @@ namespace BakeryMVC.Models
 	public class Order
 	{
 
-  public Order(string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry)
+  public Order(string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry, int invoiceTotal)
   {
     OrderTitle = orderTitle;
     Date = orderDate;
     OrderDescription = orderDescription;
     QuantityBread = quantityBread;
     QuantityPastry = quantityPastry;
+    InvoiceTotal = invoiceTotal;
     _instances.Add(this);
     OrderId = _instances.Count;
     InvoiceTotal = TotalBreadCost + TotalPastryCost;

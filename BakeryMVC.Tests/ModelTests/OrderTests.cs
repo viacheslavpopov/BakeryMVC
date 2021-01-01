@@ -19,7 +19,7 @@ namespace BakeryMVC.Test
     {
       DateTime orderDate = new DateTime(2020,12,25);
       orderDate.ToString();
-      Order newOrder = new Order("test", orderDate, "test", 1, 1);
+      Order newOrder = new Order("test", orderDate, "test", 1, 1, 1);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
@@ -32,7 +32,8 @@ namespace BakeryMVC.Test
       orderDate.ToString();
       int breadQuantity = 2;
       int pastryQuantity = 4;
-      Order newOrder = new Order(title, orderDate, description, breadQuantity, pastryQuantity);
+      int invoiceTotal = 220;
+      Order newOrder = new Order(title, orderDate, description, breadQuantity, pastryQuantity, invoiceTotal);
       int result = newOrder.OrderId;
       Assert.AreEqual(1, result);
     }
@@ -46,7 +47,8 @@ namespace BakeryMVC.Test
       orderDate.ToString();
       int breadQuantity = 20;
       int pastryQuantity = 40;
-      Order newOrder = new Order(orderTitle, orderDate, orderDescription, breadQuantity, pastryQuantity);
+      int invoiceTotal = 220;
+      Order newOrder = new Order(orderTitle, orderDate, orderDescription, breadQuantity, pastryQuantity, invoiceTotal);
       string result = newOrder.OrderDescription;
       Assert.AreEqual(orderDescription, result);
     }
@@ -60,7 +62,8 @@ namespace BakeryMVC.Test
       orderDate.ToString();
       int breadQuantity = 20;
       int pastryQuantity = 40;
-      Order newOrder = new Order(orderTitle, orderDate, orderDescription, breadQuantity, pastryQuantity);
+      int invoiceTotal = 220;
+      Order newOrder = new Order(orderTitle, orderDate, orderDescription, breadQuantity, pastryQuantity, invoiceTotal);
       string updatedOrderTitle = "Test Org Recurring";
       string updatedOrderDescription = "Weekly restaurant shipment";
       newOrder.OrderTitle = updatedOrderTitle;
@@ -94,8 +97,10 @@ namespace BakeryMVC.Test
       int pastryQuantity01 = 40;
       int breadQuantity02 = 100;
       int pastryQuantity02 = 100;
-      Order newOrder1 = new Order(orderTitle01, orderDate01, orderDescription01, breadQuantity01, pastryQuantity01);
-      Order newOrder2 = new Order(orderTitle02, orderDate02, orderDescription02, breadQuantity02, pastryQuantity02);
+      int invoiceTotal01 = 220;
+      int invoiceTotal02 = 800;
+      Order newOrder1 = new Order(orderTitle01, orderDate01, orderDescription01, breadQuantity01, pastryQuantity01, invoiceTotal01);
+      Order newOrder2 = new Order(orderTitle02, orderDate02, orderDescription02, breadQuantity02, pastryQuantity02, invoiceTotal02);
       List<Order> newOrderList = new List<Order> { newOrder1, newOrder2 };
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newOrderList, result);
@@ -116,8 +121,10 @@ namespace BakeryMVC.Test
       int pastryQuantity01 = 40;
       int breadQuantity02 = 100;
       int pastryQuantity02 = 100;
-      Order newOrder1 = new Order(orderTitle01, orderDate01, orderDescription01, breadQuantity01, pastryQuantity01);
-      Order newOrder2 = new Order(orderTitle02, orderDate02, orderDescription02, breadQuantity02, pastryQuantity02);
+      int invoiceTotal01 = 220;
+      int invoiceTotal02 = 800;
+      Order newOrder1 = new Order(orderTitle01, orderDate01, orderDescription01, breadQuantity01, pastryQuantity01, invoiceTotal01);
+      Order newOrder2 = new Order(orderTitle02, orderDate02, orderDescription02, breadQuantity02, pastryQuantity02, invoiceTotal02);
       Order result = Order.Find(2);
       Assert.AreEqual(newOrder2, result);
     }

@@ -39,11 +39,11 @@ namespace BakeryMVC.Controllers
     }
 
     [HttpPost("/vendors/{vendorId}/orders")] // creates new orders w/in x category
-    public ActionResult Create(int vendorId, string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry)
+    public ActionResult Create(int vendorId, string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry, int invoiceTotal)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor selectedVendor = Vendor.Find(vendorId);
-      Order newOrder = new Order(orderTitle, orderDate, orderDescription, quantityBread, quantityPastry);
+      Order newOrder = new Order(orderTitle, orderDate, orderDescription, quantityBread, quantityPastry, invoiceTotal);
       selectedVendor.AddOrder(newOrder);
       List<Order> vendorOrders = selectedVendor.Orders;
       model.Add("orders", vendorOrders);

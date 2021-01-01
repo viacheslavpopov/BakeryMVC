@@ -76,7 +76,8 @@ namespace BakeryMVC.Tests
       orderDate.ToString();
       int quantityBread = 1;
       int quantityPastry = 1;
-      Order newOrder = new Order(title, orderDate, description, quantityBread, quantityPastry);
+      int invoiceTotal = 1;
+      Order newOrder = new Order(title, orderDate, description, quantityBread, quantityPastry, invoiceTotal);
       List<Order> newList = new List<Order> { newOrder };
       string descriptionV = "Recurring twice weekly bread order";
       string name = "Suzie's Cafe";
