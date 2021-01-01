@@ -6,10 +6,14 @@
 
 <div class="container">
   <div class="jumbotron">
-    <h3>Vendor Details:</h3>
+    <h1>Vendor Details</h1>
   </div>
-  @* @Model["vendor"].vendorName
-  @Model["vendor"].vendorDescription *@
+
+  <img src='~/img/loaves.jpg'>
+  <hr>
+  
+  @Model["vendor"].vendorName
+  @Model["vendor"].vendorDescription
 
   <h3>Vendor Orders:</h3>
   @if (@Model["orders"].Count == 0) 
@@ -17,13 +21,13 @@
     <h3>No orders have been added for this vendor yet.</h3>
   }
   
-  <h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add New Order to Vendor</a></h3>
+  @* <h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add New Order to Vendor</a></h3>
   <ol>
   @foreach (Order order in @Model["orders"])
   {
     <li><a href='/vendors/@Model["vendor"].Id/orders/@order.OrderId'>@order.OrderTitle</a></li>
   }
-  </ol>
+  </ol> *@
 
   <hr>
   <p><a href='/vendors'>Vendor list</a></p>

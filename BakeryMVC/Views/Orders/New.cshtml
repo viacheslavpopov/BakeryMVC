@@ -2,11 +2,14 @@
   Layout = "_Layout";
 }
 
+@using BakeryMVC.Models;
+
 <div class="jumbotron">
   <h1>Add a new order to</h1> 
-  <h1>Suzie's Cafe</h1>
-  @* @Model.vendorName *@
+  <h1>@Model.vendorName</h1>
 </div>
+<img src='~/img/croissants.jpg'>
+<hr>
 
 <div class="container">
   @* <form action="vendors/@Model.Id/orders" method="post"> *@
