@@ -33,21 +33,21 @@ namespace BakeryMVC.Controllers
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor selectedVendor = Vendor.Find(id);
       List<Order> vendorOrders = selectedVendor.Orders;
-      model.Add("vendors", selectedVendor);
+      model.Add("vendor", selectedVendor);
       model.Add("orders", vendorOrders);
       return View(model);
     }
 
     [HttpPost("/vendors/{vendorId}/orders")] // creates new orders w/in x category
-    public ActionResult Create(int vendorId, string orderTitle, int orderDate, string orderDescription, int quantityBread, int quantityPastry)
+    public ActionResult Create(int vendorId, string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
-      Vendor foundVendor = Vendor.Find(vendorId);
+      Vendor selectedVendor = Vendor.Find(vendorId);
       Order newOrder = new Order(orderTitle, orderDate, orderDescription, quantityBread, quantityPastry);
-      foundVendor.AddOrder(newOrder);
-      List<Order> vendorOrders = foundVendor.Orders;
+      selectedVendor.AddOrder(newOrder);
+      List<Order> vendorOrders = selectedVendor.Orders;
       model.Add("orders", vendorOrders);
-      model.Add("vendor", foundVendor);
+      model.Add("vendor", selectedVendor);
       return View("Show", model);
     }
 

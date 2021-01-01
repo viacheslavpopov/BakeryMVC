@@ -72,7 +72,8 @@ namespace BakeryMVC.Tests
     {
       string title = "Test Title";
       string description = "Test order.";
-      int orderDate = 12/12/2020;
+      DateTime orderDate = new DateTime(2020,12,25);
+      orderDate.ToString();
       int quantityBread = 1;
       int quantityPastry = 1;
       Order newOrder = new Order(title, orderDate, description, quantityBread, quantityPastry);

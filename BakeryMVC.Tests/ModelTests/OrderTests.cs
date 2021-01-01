@@ -17,7 +17,9 @@ namespace BakeryMVC.Test
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("test", 12/20/2020, "test", 1, 1);
+      DateTime orderDate = new DateTime(2020,12,25);
+      orderDate.ToString();
+      Order newOrder = new Order("test", orderDate, "test", 1, 1);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
@@ -26,7 +28,8 @@ namespace BakeryMVC.Test
     {
       string title = "test title";
       string description = "test order";
-      int orderDate = 12/20/2020;
+      DateTime orderDate = new DateTime(2020,12,25);
+      orderDate.ToString();
       int breadQuantity = 2;
       int pastryQuantity = 4;
       Order newOrder = new Order(title, orderDate, description, breadQuantity, pastryQuantity);
@@ -39,7 +42,8 @@ namespace BakeryMVC.Test
     {
       string orderTitle = "Test Title";
       string orderDescription = "Charity event.";
-      int orderDate = 12/20/2020;
+      DateTime orderDate = new DateTime(2020,12,25);
+      orderDate.ToString();
       int breadQuantity = 20;
       int pastryQuantity = 40;
       Order newOrder = new Order(orderTitle, orderDate, orderDescription, breadQuantity, pastryQuantity);
@@ -52,7 +56,8 @@ namespace BakeryMVC.Test
     {
       string orderTitle = "Test Org Holiday Fundraiser";
       string orderDescription = "Charity event.";
-      int orderDate = 12/20/2020;
+      DateTime orderDate = new DateTime(2020,12,25);
+      orderDate.ToString();
       int breadQuantity = 20;
       int pastryQuantity = 40;
       Order newOrder = new Order(orderTitle, orderDate, orderDescription, breadQuantity, pastryQuantity);
@@ -79,8 +84,10 @@ namespace BakeryMVC.Test
     {
       string orderTitle01 = "Suzie's Cafe";
       string orderTitle02 = "PAM Gala";
-      int orderDate01 = 12/23/2020;
-      int orderDate02 = 12/25/2020;
+      DateTime orderDate01 = new DateTime(2020,12,25);
+      orderDate01.ToString();
+      DateTime orderDate02 = new DateTime(2020,12,25);
+      orderDate02.ToString();
       string orderDescription01 = "Weekly restaurant shipment";
       string orderDescription02 = "Charity event";
       int breadQuantity01 = 20;
@@ -99,8 +106,10 @@ namespace BakeryMVC.Test
     {
       string orderTitle01 = "Suzie's Cafe";
       string orderTitle02 = "PAM Gala";
-      int orderDate01 = 12/23/2020;
-      int orderDate02 = 12/25/2020;
+      DateTime orderDate01 = new DateTime(2020,12,25);
+      orderDate01.ToString();
+      DateTime orderDate02 = new DateTime(2020,12,25);
+      orderDate02.ToString();
       string orderDescription01 = "Weekly restaurant shipment";
       string orderDescription02 = "Charity event";
       int breadQuantity01 = 20;

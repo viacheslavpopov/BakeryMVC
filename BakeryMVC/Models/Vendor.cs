@@ -28,15 +28,14 @@ namespace BakeryMVC.Models
     {
       _vendorInstances.Clear();
     }
+    public static Vendor Find(int searchId)
+    {
+      return _vendorInstances[searchId - 1];
+    }
 
     public void AddOrder(Order order)
     {
       Orders.Add(order);
-    }
-
-    public static Vendor Find(int searchId)
-    {
-      return _vendorInstances[searchId - 1];
     }
   }
 }

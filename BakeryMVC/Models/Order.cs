@@ -1,14 +1,15 @@
 using System.Collections.Generic;
+using System;
 
 namespace BakeryMVC.Models
 {
 	public class Order
 	{
 
-  public Order(string orderTitle, int orderDate, string orderDescription, int quantityBread, int quantityPastry)
+  public Order(string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry)
   {
     OrderTitle = orderTitle;
-    DateTime = orderDate;
+    Date = orderDate;
     OrderDescription = orderDescription;
     QuantityBread = quantityBread;
     QuantityPastry = quantityPastry;
@@ -36,7 +37,7 @@ namespace BakeryMVC.Models
   public int OrderId { get; }
   public string OrderTitle { get; set; }
   public string OrderDescription { get; set; }
-  public int DateTime { get; set; }
+  public DateTime Date { get; set; }
   public int QuantityBread { get; set; } //UI
   public int QuantityPastry { get; set; } //UI
   public int PricePerBreadUnit { get; set; } //algebra
