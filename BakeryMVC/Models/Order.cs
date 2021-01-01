@@ -28,7 +28,7 @@ namespace BakeryMVC.Models
       InvoiceTotal = invoiceTotal;
       _instances.Add(this);
       OrderId = _instances.Count;
-      InvoiceTotal = TotalBreadCost + TotalPastryCost;
+      // InvoiceTotal = TotalBreadCost + TotalPastryCost;
     }
 
     public static void ClearAll()
