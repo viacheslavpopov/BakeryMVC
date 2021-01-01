@@ -109,50 +109,15 @@ Once the project has been cloned to your computer and you have all the necessary
 
 ---
 
-### Pages & Roots: 
-Welcome ('/')
---> root path: 
-//Vendor Pages: 
-Index.cshtml ('/vendors')
-New.cshtml ('/vendors/new')
-Show.cshtml ('/vendors/:id')
-//Order Pages:
-Index.cshtml ('/orders')
-New.cshtml ('vendors/{parentId}/orders/new')
-Show.cshtml ('vendors/{parentId}/orders/{orderId}')
-
-
-Class: Vendor (parent)
-* Dictionary { Vendor, Order}
-* Constructor
-  - VendorName
-  - VendorId (auto-generated)
-  - InvoicesOfOrders
-  - BalanceDue // stretch
-
-Class: Order (child)
-* Constructor 
-  {- VendorId, VendorName}
-  - OrderId (auto-generated)
-  - ItemDescription (bread || pastry)
-  - OrderType (wholesale || retail) // stretch
-  - OrderPrice 
-    --> Nested classes: bread & pastry console app logic (private!), create bread + pastry totals 
-  - OrderDate (format? 1-12 mo, 1-31 day, 2020+ yr)
-
----
-
 ## Stretch Goals
-- Refactor conditional logic of pricing for an algebraic formula
-- New order displaying 
+- Add pricing structure with algebraic formula for bread and pastry costs; add bread and pastry costs together for total invoice
 - Delete individual vendors, all vendors, all X vendor's orders, individual orders
-- Paid or not
-- Add Javascript
-- Individual line items for nested class orders & prices
-- Retail vs wholesale price options
+- Total invoice balance due per vendor
+- Add Javascript to form functionality
+- Retail vs wholesale pricing options
 
 ## Known bugs
-Oh, just wait ...
+None known at this time. 
 
 ### Legal, or License
 _MIT_ Copyright (c) 2020 *_Danielle Thompson_*
