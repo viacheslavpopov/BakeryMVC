@@ -1,7 +1,7 @@
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
 using BakeryMVC.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 
 namespace BakeryMVC.Controllers
 {
