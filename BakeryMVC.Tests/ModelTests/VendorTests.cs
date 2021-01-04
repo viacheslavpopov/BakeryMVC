@@ -60,7 +60,7 @@ namespace BakeryMVC.Tests
     string name01 = "Suzie's Cafe";
     string name02 = "PAM Gala";
     string description01 = "Recurring twice weekly bread loaf order";
-    string description02 = "New Relic Gala event";    
+    string description02 = "New Relic Gala event";
     Vendor newVendor1 = new Vendor(name01, description01);
     Vendor newVendor2 = new Vendor(name02, description02);
     Vendor result = Vendor.Find(2);

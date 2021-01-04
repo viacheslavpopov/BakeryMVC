@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using BakeryMVC.Models; 
+using BakeryMVC.Models;
 using System;
 
 namespace BakeryMVC.Test
@@ -52,7 +52,7 @@ namespace BakeryMVC.Test
       string result = newOrder.OrderDescription;
       Assert.AreEqual(orderDescription, result);
     }
-    
+
     [TestMethod]
     public void SetOrderArguments_SetOrderDescriptionAndTitle_String()
     {

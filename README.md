@@ -10,7 +10,7 @@
 
 ## Description
 
-Building upon a console application first built for Pierre's Bakery (see [Pierre's Bakery Console app](https://github.com/dani-t-codes/PierresBakery.Solution)), this MVC application tracks the vendors that purchase baked goods from Pierre and the orders belonging to those vendors. 
+Building upon a console application first built for Pierre's Bakery (see [Pierre's Bakery Console app](https://github.com/dani-t-codes/PierresBakery.Solution)), this MVC application tracks the vendors that purchase baked goods from Pierre and the orders belonging to those vendors.
 
 Vendors include properties for the vendor's name, a description of the vendor, a list of Orders belonging to the vendor. An Order includes properties like the title, the description, the price, and the date.
 
@@ -18,7 +18,7 @@ The homepage of the app at the root path (localhost:5000/) welcomes Pierre and p
 
 <img align="center" src="BakeryMVC/wwwroot/img/Splash-Page-Screenshot.png" alt="Welcome page screenshot">
 
-From there, the vendors page contains a link to a page with a form that Pierre can fill out to create a new Vendor. 
+From there, the vendors page contains a link to a page with a form that Pierre can fill out to create a new Vendor.
 
 <img align="center" src="BakeryMVC/wwwroot/img/New-Vendor-Form-Screenshot.png">
 
@@ -54,7 +54,7 @@ After the form is submitted, the new Vendor object is saved into a static List a
 
 This project requires the technologies listed in the above 'Technologies Used' section. If you need to acquire any of the above technologies to access this project, please follow the instructions included below.
 
-If you already have the necessary technologies on your local system, the commands necessary for running this console application and its tests will be found at the bottom of the [instructions list](https://github.com/dani-t-codes/BakeryMVC.Solution#opening-the-project-on-your-local-system). 
+If you already have the necessary technologies on your local system, the commands necessary for running this console application and its tests will be found at the bottom of the [instructions list](https://github.com/dani-t-codes/BakeryMVC.Solution#opening-the-project-on-your-local-system).
 
 #### Installing Git
 ##### For Mac Users
@@ -72,11 +72,11 @@ If you already have the necessary technologies on your local system, the command
 - Once you have Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/BakeryMVC.Solution), click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/BakeryMVC.Solution.git`.
 
 #### Installing C#, .NET, dotnet script, & MySQL
-* Install C# and .Net according to your operating system below. 
+* Install C# and .Net according to your operating system below.
 ###### For Mac
  * Download this .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.106-macos-x64-installer). Clicking this link will prompt a .pkg file download from Microsoft.
 * Open the .pkg file. This will launch an installer which will walk you through installation steps. Use the default settings the installer suggests.
-* Confirm the installation is successful by opening your terminal and running the command $ dotnet --version, which should return something like: `2.2.105`. 
+* Confirm the installation is successful by opening your terminal and running the command $ dotnet --version, which should return something like: `2.2.105`.
 
 ###### For Windows (10+)
 * Download either the the 64-bit .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.203-windows-x64-installer). Clicking these links will prompt a .exe file download from Microsoft.
@@ -91,9 +91,9 @@ Once the project has been cloned to your computer and you have all the necessary
 
 * Navigate to the project folder, PierresBakery.Solution, on your Terminal or CMD.
 * Move to the PierresBakery subfolder, and `dotnet build` will get bin/ and obj/ folders downloaded for the program to run.
-* Move to the PierresBakery.Tests subfolder via the terminal. Running `dotnet restore` will install other necessary packages listed in project's boilerplate. 
-* When in the PierresBakery.Tests subfolder, `dotnet test` will allow you to run the test-driven-development tests for the project's Models. 
-* In the main project folder, `dotnet run` will run the application in the console. 
+* Move to the PierresBakery.Tests subfolder via the terminal. Running `dotnet restore` will install other necessary packages listed in project's boilerplate.
+* When in the PierresBakery.Tests subfolder, `dotnet test` will allow you to run the test-driven-development tests for the project's Models.
+* In the main project folder, `dotnet run` will run the application in the console.
 
 ---
 
@@ -115,9 +115,10 @@ Once the project has been cloned to your computer and you have all the necessary
 - Total invoice balance due per vendor
 - Add Javascript to form functionality
 - Retail vs wholesale pricing options
+- InvoiceTotal = TotalBreadCost + TotalPastryCost;
 
 ## Known bugs
-None known at this time. 
+None known at this time.
 
 ### Legal, or License
 _MIT_ Copyright (c) 2020 *_Danielle Thompson_*

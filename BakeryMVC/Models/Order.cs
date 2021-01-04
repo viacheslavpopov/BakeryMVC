@@ -10,12 +10,12 @@ namespace BakeryMVC.Models
     public string OrderTitle { get; set; }
     public string OrderDescription { get; set; }
     public DateTime Date { get; set; }
-    public int QuantityBread { get; set; } //UI
-    public int QuantityPastry { get; set; } //UI
-    public int PricePerBreadUnit { get; set; } // stretch algebra
-    public int PricePerPastryUnit { get; set; } // stretch algebra
-    public int TotalBreadCost { get; set; } //UI
-    public int TotalPastryCost { get; set; } //UI
+    public int QuantityBread { get; set; }
+    public int QuantityPastry { get; set; }
+    public int PricePerBreadUnit { get; set; }
+    public int PricePerPastryUnit { get; set; }
+    public int TotalBreadCost { get; set; }
+    public int TotalPastryCost { get; set; }
     public int InvoiceTotal { get; set; }
 
     public Order(string orderTitle, DateTime orderDate, string orderDescription, int quantityBread, int quantityPastry, int invoiceTotal)
@@ -28,7 +28,6 @@ namespace BakeryMVC.Models
       InvoiceTotal = invoiceTotal;
       _instances.Add(this);
       OrderId = _instances.Count;
-      // InvoiceTotal = TotalBreadCost + TotalPastryCost;
     }
 
     public static void ClearAll()
