@@ -112,10 +112,10 @@ Once the project has been cloned to your computer and you have all the necessary
 ## Stretch Goals
 - Add pricing structure with algebraic formula for bread and pastry costs; add bread and pastry costs together for total invoice
 - Delete individual vendors, all vendors, all X vendor's orders, individual orders
+- InvoiceTotal = (algebraic formulas for) TotalBreadCost + TotalPastryCost;
 - Total invoice balance due per vendor
 - Add Javascript to form functionality
 - Retail vs wholesale pricing options
-- InvoiceTotal = TotalBreadCost + TotalPastryCost;
 
 ## Known bugs
 None known at this time.
