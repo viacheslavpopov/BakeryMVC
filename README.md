@@ -4,13 +4,12 @@
 
 </div>
 <p align="center">Epicodus Coding School, Independent Project with C# & ASP.NET Core MVC Application, 12.18.2020</p>
-<p align="center">By Danielle Thompson</p>
 
 ---
 
 ## Description
 
-Building upon a console application first built for Pierre's Bakery (see [Pierre's Bakery Console app](https://github.com/dani-t-codes/PierresBakery.Solution)), this MVC application tracks the vendors that purchase baked goods from Pierre and the orders belonging to those vendors.
+Building upon a console application first built for Pierre's Bakery, this MVC application tracks the vendors that purchase baked goods from Pierre and the orders belonging to those vendors.
 
 Vendors include properties for the vendor's name, a description of the vendor, a list of Orders belonging to the vendor. An Order includes properties like the title, the description, the price, and the date.
 
@@ -69,7 +68,7 @@ If you already have the necessary technologies on your local system, the command
 - Follow the instructions in the set up menu.
 
 #### For Both Mac & Windows systems
-- Once you have Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/BakeryMVC.Solution), click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/BakeryMVC.Solution.git`.
+- Once you have Git installed on your computer, go to this GitHub repository, click the "Fork" button in the upper right hand corner of the page.
 
 #### Installing C#, .NET, dotnet script, & MySQL
 * Install C# and .Net according to your operating system below.
@@ -119,6 +118,3 @@ Once the project has been cloned to your computer and you have all the necessary
 
 ## Known bugs
 None known at this time.
-
-### Legal, or License
-_MIT_ Copyright (c) 2020 *_Danielle Thompson_*
